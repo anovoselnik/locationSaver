@@ -2,8 +2,9 @@ var Hapi = require('hapi'),
     Db = require('./database');
 
 var server = new Hapi.Server();
+var port = process.env.PORT || 8080;
 
-server.connection({ process.env.PORT || 8080, '0.0.0.0' });
+server.connection({ port, '0.0.0.0' });
 
 server.route([
 	{
