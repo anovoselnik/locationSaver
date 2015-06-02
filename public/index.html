@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+
+  <title>Propell.io test</title>
+  <meta name="author" content="Antonio Novoselnik">
+	
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+	
+	<script src="bower_components/lodash/dist/lodash.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	
+	<script src="js/appRoutes.js"></script>
+	<script src="js/controllers/homeController.js"></script>
+	<script src="js/services/locationsService.js"></script>
+	<script src="js/app.js"></script>
+
+</head>
+
+<body ng-app="propellioTest">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Location saver</h1>
+				<p>
+					To save a location simply enter a name of the location and select one of the possible locations.
+					When you click on the location marker on the map a tooltip will open up with extra info about the location.
+				</p>
+			</div>
+		</div>
+
+    <div ng-view></div>
+
+	</div>
+	
+</body>
+</html>

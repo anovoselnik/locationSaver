@@ -1,0 +1,11 @@
+{
+  "name": "propellio_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "Antonio Novoselnik",
+  "dependencies": {
+    "hapi": "^8.6.0",
+    "mongoose": "^4.0.4"
+  }
+}
